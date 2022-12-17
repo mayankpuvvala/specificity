@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="specificity.css">
+    <title>Specificity</title>
+    <style>
+        .favorite{
+            color: black;
+            font-weight: bold;
+        }
+        ul#drinks li{
+            font-size: 20px;
+            background-color: aquamarine;
+            color: blue;
+            font-weight: normal;
+
+        }
+    </style>
+</head>
+<body>
+    <ul id="drinks">
+        <li>mountain dew</li>
+        <li>coke</li>
+        <li class="favorite" style="color: black;">sprite</li>
+    </ul>
+    
+</body>
+</html>
+
+        <!--if specificity of both id/class are same then we take the last updated value
+        specificity is most for the style attribute which is used in the same class list line -->
